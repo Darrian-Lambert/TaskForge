@@ -40,36 +40,9 @@ namespace TaskForge.Migrations
                     b.ToTable("Admins");
                 });
 
-            modelBuilder.Entity("Final.Models.Task", b =>
+            modelBuilder.Entity("Final.Models.Worker", b =>
                 {
-                    b.Property<int>("TaskID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
-
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Title")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.Property<int>("UID")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int?>("UserID")
-                        .HasColumnType("INTEGER");
-
-                    b.HasKey("TaskID");
-
-                    b.HasIndex("UserID");
-
-                    b.ToTable("Tasks");
-                });
-
-            modelBuilder.Entity("Final.Models.User", b =>
-                {
-                    b.Property<int>("UserID")
+                    b.Property<int>("WorkerID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
@@ -85,23 +58,50 @@ namespace TaskForge.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.HasKey("UserID");
+                    b.HasKey("WorkerID");
 
-                    b.ToTable("Users");
+                    b.ToTable("Workers");
                 });
 
-            modelBuilder.Entity("Final.Models.Task", b =>
+            modelBuilder.Entity("Final.Models.WorkerTask", b =>
                 {
-                    b.HasOne("Final.Models.User", "User")
-                        .WithMany("Tasks")
-                        .HasForeignKey("UserID");
+                    b.Property<int>("WorkerTaskID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
 
-                    b.Navigation("User");
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("UID")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("WorkerID")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("WorkerTaskID");
+
+                    b.HasIndex("WorkerID");
+
+                    b.ToTable("WorkerTasks");
                 });
 
-            modelBuilder.Entity("Final.Models.User", b =>
+            modelBuilder.Entity("Final.Models.WorkerTask", b =>
                 {
-                    b.Navigation("Tasks");
+                    b.HasOne("Final.Models.Worker", "Worker")
+                        .WithMany("WorkerTasks")
+                        .HasForeignKey("WorkerID");
+
+                    b.Navigation("Worker");
+                });
+
+            modelBuilder.Entity("Final.Models.Worker", b =>
+                {
+                    b.Navigation("WorkerTasks");
                 });
 #pragma warning restore 612, 618
         }
