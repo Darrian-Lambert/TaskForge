@@ -81,476 +81,284 @@ namespace Final.Models {
                         },
                         new Worker {
                             UserName = "lodlin0",
-                            Password = "lodlin0",
+                            Password = "Sunshine2022!",
                             FullName = "Lucius Odlin",
                             WorkerTasks = new List<WorkerTask> {
                                 new WorkerTask {
-                                    Title = "Accounting",
-                                    Description = "Do all accounting work for the store for the past month"
-                                },
-                                new WorkerTask {
-                                    Title = "Host",
-                                    Description = "Host the event"
-                                },
-                                new WorkerTask {
-                                    Title = "Remind Admin",
-                                    Description = "Remind one of the Admins to assign new tasks for Susan"
+                                    Title = "Research Market Trends",
+                                    Description = "Investigate current market trends in our industry to identify opportunities for growth."
                                 }
                             }
                         },
                         new Worker {
                             UserName = "idmitr1",
-                            Password = "idmitr1",
+                            Password = "PurpleRain$567",
                             FullName = "Isacco Dmitr",
                             WorkerTasks = new List<WorkerTask> {
                                 new WorkerTask {
-                                    Title = "Accounting",
-                                    Description = "Do all accounting work for the store for the past month"
-                                },
-                                new WorkerTask {
-                                    Title = "Host",
-                                    Description = "Host the event"
-                                },
-                                new WorkerTask {
-                                    Title = "Remind Admin",
-                                    Description = "Remind one of the Admins to assign new tasks for Susan"
+                                    Title = "Update Website Content",
+                                    Description = "Review and update website content to ensure accuracy and relevance."
                                 }
                             }
                         },
                         new Worker {
                             UserName = "mpiercy2",
-                            Password = "mpiercy2",
+                            Password = "ChocolateDreams#88",
                             FullName = "Maren Piercy",
                             WorkerTasks = new List<WorkerTask> {
                                 new WorkerTask {
-                                    Title = "Accounting",
-                                    Description = "Do all accounting work for the store for the past month"
-                                },
-                                new WorkerTask {
-                                    Title = "Host",
-                                    Description = "Host the event"
-                                },
-                                new WorkerTask {
-                                    Title = "Remind Admin",
-                                    Description = "Remind one of the Admins to assign new tasks for Susan"
+                                    Title = "Create Social Media Calendar",
+                                    Description = " Develop a social media calendar outlining content and posting schedule for the next month."
                                 }
                             }
                         },
                         new Worker {
                             UserName = "cmccunn3",
-                            Password = "Christie McCunn",
+                            Password = "SoccerStar!21",
                             FullName = "Christie McCunn",
                             WorkerTasks = new List<WorkerTask> {
                                 new WorkerTask {
-                                    Title = "Accounting",
-                                    Description = "Do all accounting work for the store for the past month"
+                                    Title = "Conduct Customer Surveys",
+                                    Description = "Design and distribute customer surveys to gather feedback on our products and services."
                                 },
                                 new WorkerTask {
-                                    Title = "Host",
-                                    Description = "Host the event"
-                                },
-                                new WorkerTask {
-                                    Title = "Remind Admin",
-                                    Description = "Remind one of the Admins to assign new tasks for Susan"
+                                    Title = "Organize Team Training",
+                                    Description = "Coordinate training sessions for team members to enhance skills and knowledge."
                                 }
                             }
                         },
                         new Worker {
                             UserName = "cchippindale4",
-                            Password = "cchippindale4",
-                            FullName = "Carolina Chippindale",
-                            WorkerTasks = new List<WorkerTask> {
-                                new WorkerTask {
-                                    Title = "Accounting",
-                                    Description = "Do all accounting work for the store for the past month"
-                                },
-                                new WorkerTask {
-                                    Title = "Host",
-                                    Description = "Host the event"
-                                },
-                                new WorkerTask {
-                                    Title = "Remind Admin",
-                                    Description = "Remind one of the Admins to assign new tasks for Susan"
-                                }
-                            }
+                            Password = "BeachBreeze$123",
+                            FullName = "Carolina Chippindale"
                         },
                         new Worker {
                             UserName = "cjude5",
-                            Password = "cjude5",
+                            Password = "SecretGarden@99",
                             FullName = "Caz Jude",
                             WorkerTasks = new List<WorkerTask> {
                                 new WorkerTask {
-                                    Title = "Accounting",
-                                    Description = "Do all accounting work for the store for the past month"
-                                },
-                                new WorkerTask {
-                                    Title = "Host",
-                                    Description = "Host the event"
-                                },
-                                new WorkerTask {
-                                    Title = "Remind Admin",
-                                    Description = "Remind one of the Admins to assign new tasks for Susan"
+                                    Title = "Analyze Competitor Strategies",
+                                    Description = "Analyze competitor strategies to identify areas where we can improve and differentiate ourselves."
                                 }
                             }
                         },
                         new Worker {
                             UserName = "aspearett6",
-                            Password = "aspearett6",
+                            Password = "MountainView#22",
                             FullName = "Austina Spearett",
                             WorkerTasks = new List<WorkerTask> {
                                 new WorkerTask {
-                                    Title = "Accounting",
-                                    Description = "Do all accounting work for the store for the past month"
-                                },
-                                new WorkerTask {
-                                    Title = "Host",
-                                    Description = "Host the event"
-                                },
-                                new WorkerTask {
-                                    Title = "Remind Admin",
-                                    Description = "Remind one of the Admins to assign new tasks for Susan"
+                                    Title = "Optimize Email Campaigns",
+                                    Description = "Review and optimize email marketing campaigns to improve engagement and conversion rates."
                                 }
                             }
                         },
                         new Worker {
                             UserName = "lminichillo7",
-                            Password = "lminichillo7",
+                            Password = "HappyDay$2022",
                             FullName = "Lenci Minichillo",
                             WorkerTasks = new List<WorkerTask> {
                                 new WorkerTask {
-                                    Title = "Accounting",
-                                    Description = "Do all accounting work for the store for the past month"
-                                },
-                                new WorkerTask {
-                                    Title = "Host",
-                                    Description = "Host the event"
-                                },
-                                new WorkerTask {
-                                    Title = "Remind Admin",
-                                    Description = "Remind one of the Admins to assign new tasks for Susan"
+                                    Title = "Draft Blog Posts",
+                                    Description = "Write engaging blog posts on industry-related topics to attract and engage our audience."
                                 }
                             }
                         },
                         new Worker {
                             UserName = "dcalvey8",
-                            Password = "dcalvey8",
-                            FullName = "Debor Calvey",
-                            WorkerTasks = new List<WorkerTask> {
-                                new WorkerTask {
-                                    Title = "Accounting",
-                                    Description = "Do all accounting work for the store for the past month"
-                                },
-                                new WorkerTask {
-                                    Title = "Host",
-                                    Description = "Host the event"
-                                },
-                                new WorkerTask {
-                                    Title = "Remind Admin",
-                                    Description = "Remind one of the Admins to assign new tasks for Susan"
-                                }
-                            }
+                            Password = "StarlightSky!333",
+                            FullName = "Debor Calvey"
                         },
                         new Worker {
                             UserName = "ebunker9",
-                            Password = "ebunker9",
-                            FullName = "Elmira Bunker",
-                            WorkerTasks = new List<WorkerTask> {
-                                new WorkerTask {
-                                    Title = "Accounting",
-                                    Description = "Do all accounting work for the store for the past month"
-                                },
-                                new WorkerTask {
-                                    Title = "Host",
-                                    Description = "Host the event"
-                                },
-                                new WorkerTask {
-                                    Title = "Remind Admin",
-                                    Description = "Remind one of the Admins to assign new tasks for Susan"
-                                }
-                            }
+                            Password = "OceanWave@777",
+                            FullName = "Elmira Bunker"
                         },
                         new Worker {
                             UserName = "jmorbeya",
-                            Password = "jmorbeya",
+                            Password = "AdventureTime$55",
                             FullName = "Jenine Morbey",
                             WorkerTasks = new List<WorkerTask> {
                                 new WorkerTask {
-                                    Title = "Accounting",
-                                    Description = "Do all accounting work for the store for the past month"
+                                    Title = "Plan Product Launch",
+                                    Description = "Develop a comprehensive plan for an upcoming product launch, including marketing strategies and timelines."
                                 },
                                 new WorkerTask {
-                                    Title = "Host",
-                                    Description = "Host the event"
-                                },
-                                new WorkerTask {
-                                    Title = "Remind Admin",
-                                    Description = "Remind one of the Admins to assign new tasks for Susan"
+                                    Title = "Create Promotional Materials",
+                                    Description = "Design promotional materials such as flyers, brochures, and banners for upcoming events or promotions."
                                 }
                             }
                         },
                         new Worker {
                             UserName = "kalenshevb",
-                            Password = "kalenshevb",
+                            Password = "LovelyDay#123",
                             FullName = "Kelsy Alenshev",
                             WorkerTasks = new List<WorkerTask> {
                                 new WorkerTask {
-                                    Title = "Accounting",
-                                    Description = "Do all accounting work for the store for the past month"
+                                    Title = "Conduct Product Testing",
+                                    Description = "Coordinate product testing sessions with target customers to gather feedback and identify areas for improvement."
                                 },
                                 new WorkerTask {
-                                    Title = "Host",
-                                    Description = "Host the event"
-                                },
-                                new WorkerTask {
-                                    Title = "Remind Admin",
-                                    Description = "Remind one of the Admins to assign new tasks for Susan"
+                                    Title = "Implement SEO Strategies",
+                                    Description = "Optimize website content and structure to improve search engine rankings and drive organic traffic."
                                 }
                             }
                         },
                         new Worker {
                             UserName = "ckelsoc",
-                            Password = "ckelsoc",
+                            Password = "PeacefulNight!89",
                             FullName = "Christiano Kelso",
                             WorkerTasks = new List<WorkerTask> {
                                 new WorkerTask {
-                                    Title = "Accounting",
-                                    Description = "Do all accounting work for the store for the past month"
+                                    Title = "Evaluate Customer Service",
+                                    Description = "Evaluate current customer service processes and identify opportunities for improvement."
                                 },
                                 new WorkerTask {
-                                    Title = "Host",
-                                    Description = "Host the event"
+                                    Title = "Streamline Order Fulfillment",
+                                    Description = "Review order fulfillment processes and implement measures to streamline operations and reduce errors."
                                 },
                                 new WorkerTask {
-                                    Title = "Remind Admin",
-                                    Description = "Remind one of the Admins to assign new tasks for Susan"
+                                    Title = "Develop Content Calendar",
+                                    Description = "Create a content calendar for blog posts, social media posts, and email newsletters for the next quarter."
                                 }
                             }
                         },
                         new Worker {
                             UserName = "lguerolad",
-                            Password = "lguerolad",
-                            FullName = "Lonee Guerola",
-                            WorkerTasks = new List<WorkerTask> {
-                                new WorkerTask {
-                                    Title = "Accounting",
-                                    Description = "Do all accounting work for the store for the past month"
-                                },
-                                new WorkerTask {
-                                    Title = "Host",
-                                    Description = "Host the event"
-                                },
-                                new WorkerTask {
-                                    Title = "Remind Admin",
-                                    Description = "Remind one of the Admins to assign new tasks for Susan"
-                                }
-                            }
+                            Password = "DreamCatcher@444",
+                            FullName = "Lonee Guerola"
                         },
                         new Worker {
                             UserName = "nbattricke",
-                            Password = "nbattricke",
+                            Password = "MagicForest$2022",
                             FullName = "Nada Battrick",
                             WorkerTasks = new List<WorkerTask> {
                                 new WorkerTask {
-                                    Title = "Accounting",
-                                    Description = "Do all accounting work for the store for the past month"
-                                },
-                                new WorkerTask {
-                                    Title = "Host",
-                                    Description = "Host the event"
-                                },
-                                new WorkerTask {
-                                    Title = "Remind Admin",
-                                    Description = "Remind one of the Admins to assign new tasks for Susan"
+                                    Title = "Monitor Online Reviews",
+                                    Description = "Monitor online review platforms to track customer feedback and address any issues or concerns."
                                 }
                             }
                         },
                         new Worker {
                             UserName = "aphebeyf",
-                            Password = "aphebeyf",
+                            Password = "SummerBreeze#77",
                             FullName = "Alecia Phebey",
                             WorkerTasks = new List<WorkerTask> {
                                 new WorkerTask {
-                                    Title = "Accounting",
-                                    Description = "Do all accounting work for the store for the past month"
-                                },
-                                new WorkerTask {
-                                    Title = "Host",
-                                    Description = "Host the event"
-                                },
-                                new WorkerTask {
-                                    Title = "Remind Admin",
-                                    Description = "Remind one of the Admins to assign new tasks for Susan"
+                                    Title = "Research New Suppliers",
+                                    Description = "Research and evaluate potential new suppliers to ensure quality and reliability."
                                 }
                             }
                         },
                         new Worker {
                             UserName = "acaistorg",
-                            Password = "acaistorg",
-                            FullName = "Arnie Caistor",
-                            WorkerTasks = new List<WorkerTask> {
-                                new WorkerTask {
-                                    Title = "Accounting",
-                                    Description = "Do all accounting work for the store for the past month"
-                                },
-                                new WorkerTask {
-                                    Title = "Host",
-                                    Description = "Host the event"
-                                },
-                                new WorkerTask {
-                                    Title = "Remind Admin",
-                                    Description = "Remind one of the Admins to assign new tasks for Susan"
-                                }
-                            }
+                            Password = "RainbowDreams!66",
+                            FullName = "Arnie Caistor"
                         },
                         new Worker {
                             UserName = "alambourneh",
-                            Password = "alambourneh",
-                            FullName = "Ashlan Lambourne",
-                            WorkerTasks = new List<WorkerTask> {
-                                new WorkerTask {
-                                    Title = "Accounting",
-                                    Description = "Do all accounting work for the store for the past month"
-                                },
-                                new WorkerTask {
-                                    Title = "Host",
-                                    Description = "Host the event"
-                                },
-                                new WorkerTask {
-                                    Title = "Remind Admin",
-                                    Description = "Remind one of the Admins to assign new tasks for Susan"
-                                }
-                            }
+                            Password = "SunnyDay@1234",
+                            FullName = "Ashlan Lambourne"
                         },
                         new Worker {
                             UserName = "tpepperilli",
-                            Password = "tpepperilli",
+                            Password = "MoonlightMagic$11",
                             FullName = "Tonya Pepperill",
                             WorkerTasks = new List<WorkerTask> {
                                 new WorkerTask {
-                                    Title = "Accounting",
-                                    Description = "Do all accounting work for the store for the past month"
+                                    Title = "Create Training Manuals",
+                                    Description = "Develop training manuals and resources for new hires to facilitate onboarding and skill development."
                                 },
                                 new WorkerTask {
-                                    Title = "Host",
-                                    Description = "Host the event"
-                                },
-                                new WorkerTask {
-                                    Title = "Remind Admin",
-                                    Description = "Remind one of the Admins to assign new tasks for Susan"
+                                    Title = "Optimize PPC Campaigns",
+                                    Description = "Review and optimize pay-per-click advertising campaigns to maximize ROI and reach target audiences."
                                 }
                             }
                         },
                         new Worker {
                             UserName = "opirtj",
-                            Password = "opirtj",
+                            Password = "ButterflyWings#999",
                             FullName = "Olin Pirt",
                             WorkerTasks = new List<WorkerTask> {
                                 new WorkerTask {
-                                    Title = "Accounting",
-                                    Description = "Do all accounting work for the store for the past month"
-                                },
-                                new WorkerTask {
-                                    Title = "Host",
-                                    Description = "Host the event"
-                                },
-                                new WorkerTask {
-                                    Title = "Remind Admin",
-                                    Description = "Remind one of the Admins to assign new tasks for Susan"
+                                    Title = "Update Product Documentation",
+                                    Description = "Revise and update product documentation to ensure accuracy and clarity for customers."
                                 }
                             }
                         },
                         new Worker {
                             UserName = "mginglellk",
-                            Password = "mginglellk",
+                            Password = "SweetMemories!2022",
                             FullName = "Marketa Ginglell",
                             WorkerTasks = new List<WorkerTask> {
                                 new WorkerTask {
-                                    Title = "Accounting",
-                                    Description = "Do all accounting work for the store for the past month"
+                                    Title = "Develop Customer Loyalty Program",
+                                    Description = "Design a customer loyalty program to reward repeat purchases and encourage customer retention."
                                 },
                                 new WorkerTask {
-                                    Title = "Host",
-                                    Description = "Host the event"
-                                },
-                                new WorkerTask {
-                                    Title = "Remind Admin",
-                                    Description = "Remind one of the Admins to assign new tasks for Susan"
+                                    Title = "Analyze Financial Performance",
+                                    Description = "Review financial statements and performance metrics to assess the company's financial health and identify areas for improvement."
                                 }
                             }
                         },
                         new Worker {
                             UserName = "bpollicottl",
-                            Password = "bpollicottl",
+                            Password = "WhisperingWinds@88",
                             FullName = "Brynne Pollicott",
                             WorkerTasks = new List<WorkerTask> {
                                 new WorkerTask {
-                                    Title = "Accounting",
-                                    Description = "Do all accounting work for the store for the past month"
-                                },
-                                new WorkerTask {
-                                    Title = "Host",
-                                    Description = "Host the event"
-                                },
-                                new WorkerTask {
-                                    Title = "Remind Admin",
-                                    Description = "Remind one of the Admins to assign new tasks for Susan"
+                                    Title = "Conduct Market Research",
+                                    Description = "Conduct market research to identify new opportunities and emerging trends in the industry."
                                 }
                             }
                         },
                         new Worker {
                             UserName = "mlatheem",
-                            Password = "mlatheem",
+                            Password = "DancingFlowers$777",
                             FullName = "Malina Lathee",
                             WorkerTasks = new List<WorkerTask> {
                                 new WorkerTask {
-                                    Title = "Accounting",
-                                    Description = "Do all accounting work for the store for the past month"
+                                    Title = "Implement Email Automation",
+                                    Description = "Set up email automation workflows to deliver targeted and personalized communications to customers."
                                 },
                                 new WorkerTask {
-                                    Title = "Host",
-                                    Description = "Host the event"
+                                    Title = "Improve Website Navigation",
+                                    Description = " Enhance website navigation and user experience to make it easier for visitors to find information and make purchases."
                                 },
                                 new WorkerTask {
-                                    Title = "Remind Admin",
-                                    Description = "Remind one of the Admins to assign new tasks for Susan"
+                                    Title = "Create Video Tutorials",
+                                    Description = "Produce instructional video tutorials to demonstrate product features and provide support to customers."
                                 }
                             }
                         },
                         new Worker {
                             UserName = "ldugalln",
-                            Password = "Laurie Dugall",
+                            Password = "TwilightZone#55",
                             FullName = "Laurie Dugall",
                             WorkerTasks = new List<WorkerTask> {
                                 new WorkerTask {
-                                    Title = "Accounting",
-                                    Description = "Do all accounting work for the store for the past month"
-                                },
-                                new WorkerTask {
-                                    Title = "Host",
-                                    Description = "Host the event"
-                                },
-                                new WorkerTask {
-                                    Title = "Remind Admin",
-                                    Description = "Remind one of the Admins to assign new tasks for Susan"
+                                    Title = "Develop Sales Collateral",
+                                    Description = "Create sales collateral such as presentations, case studies, and sales scripts to support the sales team."
                                 }
                             }
                         },
                         new Worker {
                             UserName = "lherniko",
-                            Password = "lherniko",
+                            Password = "EnchantedForest!333",
                             FullName = "Lianna Hernik",
                             WorkerTasks = new List<WorkerTask> {
                                 new WorkerTask {
-                                    Title = "Accounting",
-                                    Description = "Do all accounting work for the store for the past month"
+                                    Title = "Optimize Supply Chain",
+                                    Description = " Evaluate and optimize the supply chain to reduce costs, improve efficiency, and ensure timely delivery of products."
                                 },
                                 new WorkerTask {
-                                    Title = "Host",
-                                    Description = "Host the event"
+                                    Title = "Monitor Social Media Engagement",
+                                    Description = "Track social media engagement metrics and respond to comments and messages from followers."
                                 },
                                 new WorkerTask {
-                                    Title = "Remind Admin",
-                                    Description = "Remind one of the Admins to assign new tasks for Susan"
+                                    Title = "Review Customer Feedback",
+                                    Description = "Review customer feedback and testimonials to identify areas of strength and areas for improvement."
                                 }
                             }
                         }

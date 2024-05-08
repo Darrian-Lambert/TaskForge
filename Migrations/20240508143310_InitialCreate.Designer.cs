@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace TaskForge.Migrations
 {
     [DbContext(typeof(FinalDbContext))]
-    [Migration("20240502145858_InitialCreate")]
+    [Migration("20240508143310_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />

@@ -19,6 +19,8 @@ namespace TaskForge.Pages.Workers
         }
 
         public Worker Worker { get; set; } = default!;
+        [BindProperty]
+        public int TaskIdToDelete { get; set; }
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
