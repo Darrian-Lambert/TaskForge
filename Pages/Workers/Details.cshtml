@@ -5,24 +5,27 @@
     ViewData["Title"] = "Details";
 }
 
-<h1>Details</h1>
+<h1>Tasks</h1>
 
 <div>
-    <h4>Worker</h4>
+    <h4>@Html.DisplayFor(model => model.Worker.FullName)</h4>
     <hr />
     <dl class="row">
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Worker.UserName)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Worker.UserName)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Worker.FullName)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Worker.FullName)
-        </dd>
+        <dd class="col-sm-10"></dd>
+        @foreach(var x in Model.Worker.WorkerTasks) {
+            <dd class="col-sm-4">
+                @Html.DisplayFor(model => x.Title)
+            </dd>
+            <dd class="col-sm-4">
+                @Html.DisplayFor(model => x.Description)
+            </dd>
+            <dd class="col-sm-4">
+                <form method="post">
+                    <input type="hidden" asp-for="TaskIdToDelete" value="@x.WorkerTaskID" />
+                    <input type="submit" asp-page-handler="RemoveTask" value="Remove Task" class="btn btn-danger btn-sm" />
+                </form>
+            </dd>
+        }
     </dl>
 </div>
 <div>

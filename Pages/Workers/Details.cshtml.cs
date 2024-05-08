@@ -29,7 +29,7 @@ namespace TaskForge.Pages.Workers
                 return NotFound();
             }
 
-            var worker = await _context.Workers.FirstOrDefaultAsync(m => m.WorkerID == id);
+            var worker = await _context.Workers.Include(x => x.WorkerTasks).FirstOrDefaultAsync(m => m.WorkerID == id);
             if (worker == null)
             {
                 return NotFound();
@@ -39,6 +39,21 @@ namespace TaskForge.Pages.Workers
                 Worker = worker;
             }
             return Page();
+        }
+
+        public IActionResult OnPostRemoveTask(int? id) {
+            if (!ModelState.IsValid) {
+                return Page();
+            }
+
+            var Task = _context.WorkerTasks.FirstOrDefault(t => t.WorkerTaskID == TaskIdToDelete);
+
+            if (Task != null) {
+                _context.Remove(Task);
+                _context.SaveChanges();
+            }
+
+            return RedirectToPage("./Index");
         }
     }
 }

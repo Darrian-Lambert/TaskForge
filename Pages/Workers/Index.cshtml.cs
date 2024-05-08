@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using Final.Models;
+using System.Text.RegularExpressions;
+using SQLitePCL;
 
 namespace TaskForge.Pages.Workers
 {
@@ -19,10 +21,17 @@ namespace TaskForge.Pages.Workers
         }
 
         public IList<Worker> Worker { get;set; } = default!;
+        [BindProperty(SupportsGet = true)]
+        public int PageNum { get; set; } = 1;
+
+        public int PageSize { get; set; } = 10;
+        [BindProperty]
+        public int PagesNeeded { get; set; }
 
         public async Task OnGetAsync()
         {
-            Worker = await _context.Workers.ToListAsync();
+            PagesNeeded = (int)Math.Ceiling((double)_context.Workers.Count()/PageSize);
+            Worker = await _context.Workers.Skip((PageNum-1)*PageSize).Take(PageSize).ToListAsync();
         }
     }
 }

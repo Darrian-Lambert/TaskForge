@@ -1,0 +1,80 @@
+@page
+@model TaskForge.Pages.Workers.NewTaskModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Task Creator</h1>
+
+<h1>Task Manager</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @{
+                    var UNameSort = "UName_asc";
+                    if (Model.CurrentSort == "UName_asc") {
+                        UNameSort = "UName_desc";
+                    } else if (Model.CurrentSort == "UName_desc") {
+                        UNameSort = "None";
+                    }
+                }
+                <a asp-page="./NewTasks" asp-route-PageNum="@Model.PageNum" asp-route-CurrentSort="@UNameSort">@Html.DisplayNameFor(model => model.Task[0].Worker.UserName)</a>
+            </th>
+            <th>
+                 @{
+                    var TitleSort = "Task_asc";
+                    if (Model.CurrentSort == "Task_asc") {
+                        TitleSort = "Task_desc";
+                    } else if (Model.CurrentSort == "Task_desc") {
+                        TitleSort = "None";
+                    }
+                }
+                <a asp-page="./NewTasks" asp-route-PageNum="@Model.PageNum" asp-route-CurrentSort="@TitleSort">@Html.DisplayNameFor(model => model.Task[0].Title)</a>
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Task[0].Description)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Task) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Worker.UserName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                <form method="post">
+                    <input type="hidden" asp-for="TaskIdToDelete" value="@item.WorkerTaskID" />
+                    <input type="submit" asp-page-handler="DeleteTask" value="Delete Task" class="btn btn-danger btn-sm" />
+                </form>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+<hr />
+@{
+    var prevDisabled="";
+    var nextDisabled="";
+    if (Model.PageNum <= 1) {
+        prevDisabled = "disabled";
+    }
+    if (Model.PageNum >= Model.PagesNeeded) {
+        nextDisabled = "disabled";
+    }
+}
+<nav aria-label="Worker Navigation">
+    <ul class="pagination">
+        <li class="page-item @prevDisabled"><a class="page-link" asp-page="./NewTasks" asp-route-PageNum="@(Model.PageNum - 1) " asp-route-CurrentSort="@Model.CurrentSort">Previous</a></li>
+        <li class="page-item @nextDisabled"><a class="page-link" asp-page="./NewTasks" asp-route-PageNum="@(Model.PageNum + 1)" asp-route-CurrentSort="@Model.CurrentSort">Next</a></li>
+    </ul>
+</nav>

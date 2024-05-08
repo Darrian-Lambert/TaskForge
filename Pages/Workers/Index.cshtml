@@ -5,10 +5,11 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1>Workers</h1>
 
 <p>
-    <a asp-page="Create">Create New</a>
+    <a asp-page="Create">Create New Worker</a>
+    <a asp-page="NewTasks">Create New tasks</a>
 </p>
 <table class="table">
     <thead>
@@ -33,10 +34,27 @@
             </td>
             <td>
                 <a asp-page="./Edit" asp-route-id="@item.WorkerID">Edit</a> |
-                <a asp-page="./Details" asp-route-id="@item.WorkerID">Details</a> |
+                <a asp-page="./Details" asp-route-id="@item.WorkerID">tasks</a> |
                 <a asp-page="./Delete" asp-route-id="@item.WorkerID">Delete</a>
             </td>
         </tr>
 }
     </tbody>
 </table>
+<hr />
+@{
+    var prevDisabled="";
+    var nextDisabled="";
+    if (Model.PageNum <= 1) {
+        prevDisabled = "disabled";
+    }
+    if (Model.PageNum >= Model.PagesNeeded) {
+        nextDisabled = "disabled";
+    }
+}
+<nav aria-label="Worker Navigation">
+    <ul class="pagination">
+        <li class="page-item @prevDisabled"><a class="page-link" asp-page="./Index" asp-route-PageNum="@(Model.PageNum - 1)">Previous</a></li>
+        <li class="page-item @nextDisabled"><a class="page-link" asp-page="./Index" asp-route-PageNum="@(Model.PageNum + 1)">Next</a></li>
+    </ul>
+</nav>

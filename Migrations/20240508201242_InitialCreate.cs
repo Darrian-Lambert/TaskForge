@@ -49,7 +49,7 @@ namespace TaskForge.Migrations
                     Title = table.Column<string>(type: "TEXT", nullable: false),
                     Description = table.Column<string>(type: "TEXT", nullable: false),
                     UID = table.Column<int>(type: "INTEGER", nullable: false),
-                    WorkerID = table.Column<int>(type: "INTEGER", nullable: true)
+                    WorkerID = table.Column<int>(type: "INTEGER", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -58,7 +58,8 @@ namespace TaskForge.Migrations
                         name: "FK_WorkerTasks_Workers_WorkerID",
                         column: x => x.WorkerID,
                         principalTable: "Workers",
-                        principalColumn: "WorkerID");
+                        principalColumn: "WorkerID",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(

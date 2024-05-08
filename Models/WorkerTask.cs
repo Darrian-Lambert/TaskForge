@@ -4,6 +4,6 @@ namespace Final.Models {
         public string Title { get; set; } = string.Empty;
         public string Description { get; set; } = string.Empty;
         public int UID { get; set; }
-        public Worker? Worker { get; set; }
+        public Worker Worker { get; set; } = default!;
     }
 }
