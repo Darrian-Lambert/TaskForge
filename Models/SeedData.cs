@@ -78,6 +78,481 @@ namespace Final.Models {
                                     Description = "Remind one of the Admins to assign new tasks for Susan"
                                 }
                             }
+                        },
+                        new Worker {
+                            UserName = "lodlin0",
+                            Password = "lodlin0",
+                            FullName = "Lucius Odlin",
+                            WorkerTasks = new List<WorkerTask> {
+                                new WorkerTask {
+                                    Title = "Accounting",
+                                    Description = "Do all accounting work for the store for the past month"
+                                },
+                                new WorkerTask {
+                                    Title = "Host",
+                                    Description = "Host the event"
+                                },
+                                new WorkerTask {
+                                    Title = "Remind Admin",
+                                    Description = "Remind one of the Admins to assign new tasks for Susan"
+                                }
+                            }
+                        },
+                        new Worker {
+                            UserName = "idmitr1",
+                            Password = "idmitr1",
+                            FullName = "Isacco Dmitr",
+                            WorkerTasks = new List<WorkerTask> {
+                                new WorkerTask {
+                                    Title = "Accounting",
+                                    Description = "Do all accounting work for the store for the past month"
+                                },
+                                new WorkerTask {
+                                    Title = "Host",
+                                    Description = "Host the event"
+                                },
+                                new WorkerTask {
+                                    Title = "Remind Admin",
+                                    Description = "Remind one of the Admins to assign new tasks for Susan"
+                                }
+                            }
+                        },
+                        new Worker {
+                            UserName = "mpiercy2",
+                            Password = "mpiercy2",
+                            FullName = "Maren Piercy",
+                            WorkerTasks = new List<WorkerTask> {
+                                new WorkerTask {
+                                    Title = "Accounting",
+                                    Description = "Do all accounting work for the store for the past month"
+                                },
+                                new WorkerTask {
+                                    Title = "Host",
+                                    Description = "Host the event"
+                                },
+                                new WorkerTask {
+                                    Title = "Remind Admin",
+                                    Description = "Remind one of the Admins to assign new tasks for Susan"
+                                }
+                            }
+                        },
+                        new Worker {
+                            UserName = "cmccunn3",
+                            Password = "Christie McCunn",
+                            FullName = "Christie McCunn",
+                            WorkerTasks = new List<WorkerTask> {
+                                new WorkerTask {
+                                    Title = "Accounting",
+                                    Description = "Do all accounting work for the store for the past month"
+                                },
+                                new WorkerTask {
+                                    Title = "Host",
+                                    Description = "Host the event"
+                                },
+                                new WorkerTask {
+                                    Title = "Remind Admin",
+                                    Description = "Remind one of the Admins to assign new tasks for Susan"
+                                }
+                            }
+                        },
+                        new Worker {
+                            UserName = "cchippindale4",
+                            Password = "cchippindale4",
+                            FullName = "Carolina Chippindale",
+                            WorkerTasks = new List<WorkerTask> {
+                                new WorkerTask {
+                                    Title = "Accounting",
+                                    Description = "Do all accounting work for the store for the past month"
+                                },
+                                new WorkerTask {
+                                    Title = "Host",
+                                    Description = "Host the event"
+                                },
+                                new WorkerTask {
+                                    Title = "Remind Admin",
+                                    Description = "Remind one of the Admins to assign new tasks for Susan"
+                                }
+                            }
+                        },
+                        new Worker {
+                            UserName = "cjude5",
+                            Password = "cjude5",
+                            FullName = "Caz Jude",
+                            WorkerTasks = new List<WorkerTask> {
+                                new WorkerTask {
+                                    Title = "Accounting",
+                                    Description = "Do all accounting work for the store for the past month"
+                                },
+                                new WorkerTask {
+                                    Title = "Host",
+                                    Description = "Host the event"
+                                },
+                                new WorkerTask {
+                                    Title = "Remind Admin",
+                                    Description = "Remind one of the Admins to assign new tasks for Susan"
+                                }
+                            }
+                        },
+                        new Worker {
+                            UserName = "aspearett6",
+                            Password = "aspearett6",
+                            FullName = "Austina Spearett",
+                            WorkerTasks = new List<WorkerTask> {
+                                new WorkerTask {
+                                    Title = "Accounting",
+                                    Description = "Do all accounting work for the store for the past month"
+                                },
+                                new WorkerTask {
+                                    Title = "Host",
+                                    Description = "Host the event"
+                                },
+                                new WorkerTask {
+                                    Title = "Remind Admin",
+                                    Description = "Remind one of the Admins to assign new tasks for Susan"
+                                }
+                            }
+                        },
+                        new Worker {
+                            UserName = "lminichillo7",
+                            Password = "lminichillo7",
+                            FullName = "Lenci Minichillo",
+                            WorkerTasks = new List<WorkerTask> {
+                                new WorkerTask {
+                                    Title = "Accounting",
+                                    Description = "Do all accounting work for the store for the past month"
+                                },
+                                new WorkerTask {
+                                    Title = "Host",
+                                    Description = "Host the event"
+                                },
+                                new WorkerTask {
+                                    Title = "Remind Admin",
+                                    Description = "Remind one of the Admins to assign new tasks for Susan"
+                                }
+                            }
+                        },
+                        new Worker {
+                            UserName = "dcalvey8",
+                            Password = "dcalvey8",
+                            FullName = "Debor Calvey",
+                            WorkerTasks = new List<WorkerTask> {
+                                new WorkerTask {
+                                    Title = "Accounting",
+                                    Description = "Do all accounting work for the store for the past month"
+                                },
+                                new WorkerTask {
+                                    Title = "Host",
+                                    Description = "Host the event"
+                                },
+                                new WorkerTask {
+                                    Title = "Remind Admin",
+                                    Description = "Remind one of the Admins to assign new tasks for Susan"
+                                }
+                            }
+                        },
+                        new Worker {
+                            UserName = "ebunker9",
+                            Password = "ebunker9",
+                            FullName = "Elmira Bunker",
+                            WorkerTasks = new List<WorkerTask> {
+                                new WorkerTask {
+                                    Title = "Accounting",
+                                    Description = "Do all accounting work for the store for the past month"
+                                },
+                                new WorkerTask {
+                                    Title = "Host",
+                                    Description = "Host the event"
+                                },
+                                new WorkerTask {
+                                    Title = "Remind Admin",
+                                    Description = "Remind one of the Admins to assign new tasks for Susan"
+                                }
+                            }
+                        },
+                        new Worker {
+                            UserName = "jmorbeya",
+                            Password = "jmorbeya",
+                            FullName = "Jenine Morbey",
+                            WorkerTasks = new List<WorkerTask> {
+                                new WorkerTask {
+                                    Title = "Accounting",
+                                    Description = "Do all accounting work for the store for the past month"
+                                },
+                                new WorkerTask {
+                                    Title = "Host",
+                                    Description = "Host the event"
+                                },
+                                new WorkerTask {
+                                    Title = "Remind Admin",
+                                    Description = "Remind one of the Admins to assign new tasks for Susan"
+                                }
+                            }
+                        },
+                        new Worker {
+                            UserName = "kalenshevb",
+                            Password = "kalenshevb",
+                            FullName = "Kelsy Alenshev",
+                            WorkerTasks = new List<WorkerTask> {
+                                new WorkerTask {
+                                    Title = "Accounting",
+                                    Description = "Do all accounting work for the store for the past month"
+                                },
+                                new WorkerTask {
+                                    Title = "Host",
+                                    Description = "Host the event"
+                                },
+                                new WorkerTask {
+                                    Title = "Remind Admin",
+                                    Description = "Remind one of the Admins to assign new tasks for Susan"
+                                }
+                            }
+                        },
+                        new Worker {
+                            UserName = "ckelsoc",
+                            Password = "ckelsoc",
+                            FullName = "Christiano Kelso",
+                            WorkerTasks = new List<WorkerTask> {
+                                new WorkerTask {
+                                    Title = "Accounting",
+                                    Description = "Do all accounting work for the store for the past month"
+                                },
+                                new WorkerTask {
+                                    Title = "Host",
+                                    Description = "Host the event"
+                                },
+                                new WorkerTask {
+                                    Title = "Remind Admin",
+                                    Description = "Remind one of the Admins to assign new tasks for Susan"
+                                }
+                            }
+                        },
+                        new Worker {
+                            UserName = "lguerolad",
+                            Password = "lguerolad",
+                            FullName = "Lonee Guerola",
+                            WorkerTasks = new List<WorkerTask> {
+                                new WorkerTask {
+                                    Title = "Accounting",
+                                    Description = "Do all accounting work for the store for the past month"
+                                },
+                                new WorkerTask {
+                                    Title = "Host",
+                                    Description = "Host the event"
+                                },
+                                new WorkerTask {
+                                    Title = "Remind Admin",
+                                    Description = "Remind one of the Admins to assign new tasks for Susan"
+                                }
+                            }
+                        },
+                        new Worker {
+                            UserName = "nbattricke",
+                            Password = "nbattricke",
+                            FullName = "Nada Battrick",
+                            WorkerTasks = new List<WorkerTask> {
+                                new WorkerTask {
+                                    Title = "Accounting",
+                                    Description = "Do all accounting work for the store for the past month"
+                                },
+                                new WorkerTask {
+                                    Title = "Host",
+                                    Description = "Host the event"
+                                },
+                                new WorkerTask {
+                                    Title = "Remind Admin",
+                                    Description = "Remind one of the Admins to assign new tasks for Susan"
+                                }
+                            }
+                        },
+                        new Worker {
+                            UserName = "aphebeyf",
+                            Password = "aphebeyf",
+                            FullName = "Alecia Phebey",
+                            WorkerTasks = new List<WorkerTask> {
+                                new WorkerTask {
+                                    Title = "Accounting",
+                                    Description = "Do all accounting work for the store for the past month"
+                                },
+                                new WorkerTask {
+                                    Title = "Host",
+                                    Description = "Host the event"
+                                },
+                                new WorkerTask {
+                                    Title = "Remind Admin",
+                                    Description = "Remind one of the Admins to assign new tasks for Susan"
+                                }
+                            }
+                        },
+                        new Worker {
+                            UserName = "acaistorg",
+                            Password = "acaistorg",
+                            FullName = "Arnie Caistor",
+                            WorkerTasks = new List<WorkerTask> {
+                                new WorkerTask {
+                                    Title = "Accounting",
+                                    Description = "Do all accounting work for the store for the past month"
+                                },
+                                new WorkerTask {
+                                    Title = "Host",
+                                    Description = "Host the event"
+                                },
+                                new WorkerTask {
+                                    Title = "Remind Admin",
+                                    Description = "Remind one of the Admins to assign new tasks for Susan"
+                                }
+                            }
+                        },
+                        new Worker {
+                            UserName = "alambourneh",
+                            Password = "alambourneh",
+                            FullName = "Ashlan Lambourne",
+                            WorkerTasks = new List<WorkerTask> {
+                                new WorkerTask {
+                                    Title = "Accounting",
+                                    Description = "Do all accounting work for the store for the past month"
+                                },
+                                new WorkerTask {
+                                    Title = "Host",
+                                    Description = "Host the event"
+                                },
+                                new WorkerTask {
+                                    Title = "Remind Admin",
+                                    Description = "Remind one of the Admins to assign new tasks for Susan"
+                                }
+                            }
+                        },
+                        new Worker {
+                            UserName = "tpepperilli",
+                            Password = "tpepperilli",
+                            FullName = "Tonya Pepperill",
+                            WorkerTasks = new List<WorkerTask> {
+                                new WorkerTask {
+                                    Title = "Accounting",
+                                    Description = "Do all accounting work for the store for the past month"
+                                },
+                                new WorkerTask {
+                                    Title = "Host",
+                                    Description = "Host the event"
+                                },
+                                new WorkerTask {
+                                    Title = "Remind Admin",
+                                    Description = "Remind one of the Admins to assign new tasks for Susan"
+                                }
+                            }
+                        },
+                        new Worker {
+                            UserName = "opirtj",
+                            Password = "opirtj",
+                            FullName = "Olin Pirt",
+                            WorkerTasks = new List<WorkerTask> {
+                                new WorkerTask {
+                                    Title = "Accounting",
+                                    Description = "Do all accounting work for the store for the past month"
+                                },
+                                new WorkerTask {
+                                    Title = "Host",
+                                    Description = "Host the event"
+                                },
+                                new WorkerTask {
+                                    Title = "Remind Admin",
+                                    Description = "Remind one of the Admins to assign new tasks for Susan"
+                                }
+                            }
+                        },
+                        new Worker {
+                            UserName = "mginglellk",
+                            Password = "mginglellk",
+                            FullName = "Marketa Ginglell",
+                            WorkerTasks = new List<WorkerTask> {
+                                new WorkerTask {
+                                    Title = "Accounting",
+                                    Description = "Do all accounting work for the store for the past month"
+                                },
+                                new WorkerTask {
+                                    Title = "Host",
+                                    Description = "Host the event"
+                                },
+                                new WorkerTask {
+                                    Title = "Remind Admin",
+                                    Description = "Remind one of the Admins to assign new tasks for Susan"
+                                }
+                            }
+                        },
+                        new Worker {
+                            UserName = "bpollicottl",
+                            Password = "bpollicottl",
+                            FullName = "Brynne Pollicott",
+                            WorkerTasks = new List<WorkerTask> {
+                                new WorkerTask {
+                                    Title = "Accounting",
+                                    Description = "Do all accounting work for the store for the past month"
+                                },
+                                new WorkerTask {
+                                    Title = "Host",
+                                    Description = "Host the event"
+                                },
+                                new WorkerTask {
+                                    Title = "Remind Admin",
+                                    Description = "Remind one of the Admins to assign new tasks for Susan"
+                                }
+                            }
+                        },
+                        new Worker {
+                            UserName = "mlatheem",
+                            Password = "mlatheem",
+                            FullName = "Malina Lathee",
+                            WorkerTasks = new List<WorkerTask> {
+                                new WorkerTask {
+                                    Title = "Accounting",
+                                    Description = "Do all accounting work for the store for the past month"
+                                },
+                                new WorkerTask {
+                                    Title = "Host",
+                                    Description = "Host the event"
+                                },
+                                new WorkerTask {
+                                    Title = "Remind Admin",
+                                    Description = "Remind one of the Admins to assign new tasks for Susan"
+                                }
+                            }
+                        },
+                        new Worker {
+                            UserName = "ldugalln",
+                            Password = "Laurie Dugall",
+                            FullName = "Laurie Dugall",
+                            WorkerTasks = new List<WorkerTask> {
+                                new WorkerTask {
+                                    Title = "Accounting",
+                                    Description = "Do all accounting work for the store for the past month"
+                                },
+                                new WorkerTask {
+                                    Title = "Host",
+                                    Description = "Host the event"
+                                },
+                                new WorkerTask {
+                                    Title = "Remind Admin",
+                                    Description = "Remind one of the Admins to assign new tasks for Susan"
+                                }
+                            }
+                        },
+                        new Worker {
+                            UserName = "lherniko",
+                            Password = "lherniko",
+                            FullName = "Lianna Hernik",
+                            WorkerTasks = new List<WorkerTask> {
+                                new WorkerTask {
+                                    Title = "Accounting",
+                                    Description = "Do all accounting work for the store for the past month"
+                                },
+                                new WorkerTask {
+                                    Title = "Host",
+                                    Description = "Host the event"
+                                },
+                                new WorkerTask {
+                                    Title = "Remind Admin",
+                                    Description = "Remind one of the Admins to assign new tasks for Susan"
+                                }
+                            }
                         }
                     );
                     context.Admins.AddRange(
