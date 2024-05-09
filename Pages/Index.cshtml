@@ -6,10 +6,10 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Login</h1>
 
-    <div id="loginform" style="border: 1px solid black;">
-        <form method="post">
+    <div id="loginform" style="border: 1px solid black; @if (!Model.LoggedIn) { <text>display: block;</text> } else { <text>display: none;</text> }">
+    <h1 class="display-4">Login</h1>
+        <form method="post" asp-page-handler="Show">
             <div class="form-group">
                 <label asp-for="Username" class="control-label"></label>
                 <input asp-for="Username" class="form-control" />
@@ -27,6 +27,28 @@
                 <input type="submit" value="Submit" class="btn btn-primary" />
             </div>
         </form>
+    </div>
+
+    <div id="MyTaskTable" @if (Model.TableisVisable) { <text>style="display: block;"</text> } else { <text>style="display: none;"</text> }>
+        <h1 class="display-4">Your tasks</h1>
+        <table>
+            <tr>
+                <th>Title</th>
+                <th>Description</th>
+            </tr>
+            @foreach (var Task in Model.worker.WorkerTasks) {
+                <tr>
+                    <td>@Task.Title</td>
+                    <td>@Task.Description</td>
+                    <td>
+                        <form method="post">
+                            <input type="hidden" asp-for="targetTask" value="@Task.WorkerTaskID" />
+                            <input type="submit" asp-page-handler="MarkComplete" value="Mark Complete" class="btn btn-primary btn-sm"/>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </table>
     </div>
 </div>
 
