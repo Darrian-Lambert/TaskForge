@@ -1,2 +1,14 @@
 # TaskForge - Darrian Lambert
-Developed as a final project in april of 2024. Allows users to see their tasks and mark them as complete. 
+
+To test the application both as an admin and a regular user, you can use the following sign-ins:
+
+Admin:
+Username: Watcher
+Password: R3m3mb3r
+
+Workers:
+Username: lherniko
+Password: EnchantedForest!333
+
+Username: Chef
+Password: SuperC0w

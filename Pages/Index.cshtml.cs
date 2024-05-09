@@ -22,8 +22,10 @@ public class IndexModel : PageModel
     public string Password { get; set;} = string.Empty;
     private readonly ILogger<IndexModel> _logger;
     private readonly FinalDbContext _context;
-    public bool TableisVisable = false;
-    public bool LoggedIn = false;
+    [BindProperty]
+    public bool TableisVisable { get; set; } = false;
+    [BindProperty]
+    public bool LoggedIn { get; set; } = false;
     public Worker worker { get; set; } = new Worker();
     public List<WorkerTask> Tasks { get; set; } = new List<WorkerTask>();
     [BindProperty]
@@ -47,8 +49,6 @@ public class IndexModel : PageModel
         if (admin != null) {
             return RedirectToPage("/Workers/Index");
         } else if (worker != null) {
-            _logger.LogCritical($"{worker.WorkerID}");
-
             Tasks = _context.WorkerTasks.Where(t => t.UID == worker.WorkerID).ToList();
 
             TableisVisable = true;
@@ -60,7 +60,7 @@ public class IndexModel : PageModel
             return Page();
         }
     }
-    public void OnPostMarkComplete() {
+    public async void OnPostMarkComplete() {
 
         if (targetTask != -1) {
             var Delv = _context.WorkerTasks.FirstOrDefault(d => d.WorkerTaskID == targetTask);
@@ -73,5 +73,10 @@ public class IndexModel : PageModel
 
         // Reset the page
         Tasks = _context.WorkerTasks.Where(w => w.UID == worker.WorkerID).ToList();
+
+        LoggedIn = true;
+        TableisVisable = true;
+
+        await OnPostShow();
     }
 }

@@ -43,7 +43,7 @@
                     <td>
                         <form method="post">
                             <input type="hidden" asp-for="targetTask" value="@Task.WorkerTaskID" />
-                            <input type="submit" asp-page-handler="MarkComplete" value="Mark Complete" class="btn btn-primary btn-sm"/>
+                            <input type="submit" asp-page-handler="MarkComplete" asp-route-Username="@Model.Username" asp-route-Password="@Model.Password" value="Mark Complete" class="btn btn-primary btn-sm"/>
                         </form>
                     </td>
                 </tr>
