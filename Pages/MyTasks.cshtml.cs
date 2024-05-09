@@ -1,89 +1,57 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
+using Final.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using System.ComponentModel.DataAnnotations;
 using Microsoft.EntityFrameworkCore;
-using Final.Models;
-using System.Text.RegularExpressions;
-using SQLitePCL;
 
-namespace TaskForge.Pages
+namespace TaskForge.Pages;
+
+public class MyTasksModel : PageModel
 {
-    public class MyTaskModel : PageModel
+    private readonly ILogger<MyTasksModel> _logger;
+    private readonly FinalDbContext _context;
+    public List<WorkerTask> Tasks { get; set; } = default!;
+    [BindProperty]
+    public int targetTask { get; set; } = -1;
+    public int thisWorker { get; set; } = default!;
+
+    public MyTasksModel(FinalDbContext context, ILogger<MyTasksModel> logger)
     {
-        private readonly ILogger<MyTaskModel> _logger;
-        private readonly Final.Models.FinalDbContext _context;
+        _context = context;
+        _logger = logger;
+    }
 
-        public MyTaskModel(Final.Models.FinalDbContext context, ILogger<MyTaskModel> logger)
-        {
-            _context = context;
-            _logger = logger;
-        }
-        public Worker My { get; set; }
-        public List<WorkerTask> Tasks { get; set; } = new List<WorkerTask>();
-        public List<WorkerTask> Visable { get; set; } = new List<WorkerTask>();
+    public void OnGet(int workerID)
+    {
+        _logger.LogError($"{workerID}");
+        Tasks = _context.WorkerTasks.Where(w => w.UID == workerID).ToList();
+        _logger.LogError($"Taks {_context.WorkerTasks.Where(w => w.UID == workerID).ToArray()}");
+        _logger.LogError($"Taks {Tasks.Count}");
+        thisWorker = workerID;
+        _logger.LogError($"This worker {thisWorker}");
 
-        [BindProperty(SupportsGet = true)]
-        public int PageNum { get; set; } = 1;
+        _logger.LogError($"Test {_context.Workers.Where(t => t.WorkerID == workerID).ToArray()}");
+        var testo = _context.WorkerTasks.Include(x => x.Worker).ToList();
+        _logger.LogCritical($"{testo}");
+        _logger.LogCritical($"{testo[3].UID}");
+    }
 
-        public int PageSize { get; set; } = 10;
-        [BindProperty(SupportsGet = true)]
-        public string CurrentSort {get; set;} = "None";
-        [BindProperty]
-        public int PagesNeeded { get; set; }
-        [BindProperty]
-        public int TaskIdToDelete { get; set; }
+    public IActionResult OnPostMarkComplete() {
 
-        public async Task<IActionResult> OnGetAsync(int? id)
-        {
-            _logger.LogWarning($"ID: {id}");
-            if (id == null)
-            {
-                return NotFound();
-            }
-            My = _context.Workers.Single(x => x.WorkerID == id);
-            if (My == null) {
-                return NotFound();
-            }
-            Tasks = My.WorkerTasks.ToList();
-            _logger.LogWarning($"MyTasks: {Tasks.ToArray()}");
-            if (Tasks == null)
-            {
-                return NotFound();
-            }
-            PagesNeeded = (int)Math.Ceiling((double)Tasks.Count()/PageSize);
-            _logger.LogWarning($"PagesNeeded: {PagesNeeded}");
-            Visable = Tasks;
-            _logger.LogWarning($"MyVisableTasks: {Visable.ToArray()}");
-            switch (CurrentSort) {
-                case "Title_asc":
-                    Visable = Visable.OrderBy(x => x.Title).ToList();
-                    break;
-                case "Title_desc":
-                    Visable = Visable.OrderByDescending(x => x.Title).ToList();
-                    break;
-            }
-            _logger.LogWarning($"MyVisableTasks: {Visable.ToArray()}");
-            Visable = Visable.Skip((PageNum-1)*PageSize).Take(PageSize).ToList();
-            _logger.LogWarning($"MyVisableTasks: {Visable.ToArray()}");
-            return Page();
-        }
-        public IActionResult OnPostRemoveTask(int? id) {
-            if (!ModelState.IsValid) {
-                return Page();
-            }
+        if (targetTask != -1) {
+            var Delv = _context.WorkerTasks.FirstOrDefault(d => d.WorkerTaskID == targetTask);
 
-            var Target = _context.WorkerTasks.FirstOrDefault(t => t.WorkerTaskID == TaskIdToDelete);
-
-            if (Target != null) {
-                _context.WorkerTasks.Remove(Target);
+            if (Delv != null) {
+                _context.WorkerTasks.Remove(Delv);
                 _context.SaveChanges();
             }
-
-            return RedirectToPage("/MyTasks", new {id = My.WorkerID});
         }
+
+        // Reset the page
+        Tasks = _context.WorkerTasks.Where(w => w.UID == thisWorker).ToList();
+
+        return Page();
     }
+
 }
+

@@ -39,7 +39,8 @@ public class IndexModel : PageModel
         if (admin != null) {
             return RedirectToPage("/Workers/Index");
         } else if (worker != null) {
-            return RedirectToPage("/MyTasks", new {id = worker.WorkerID});
+            _logger.LogCritical($"{worker.WorkerID}");
+            return RedirectToPage("/MyTasks", new {workerID = worker.WorkerID});
         } else {
             ModelState.AddModelError(string.Empty, "Invalid username or password.");
             return Page();
