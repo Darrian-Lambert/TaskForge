@@ -6,6 +6,30 @@
 }
 
 <h1>Task Creator</h1>
+<form method="post" asp-page-handler="NewTask">
+    <div class="form-group">
+        <label asp-for="NewTask.UID" class="control-label"><h2>Select Worker</h2></label>
+        <select asp-for="NewTask.UID" class="form-control">
+            <option value="">-- Select Worker --</option>
+            @foreach (var Worker in Model.TheseWorkers) {
+                <option value="@Worker.WorkerID">@Worker.FullName</option>
+            }
+        </select>
+    </div>
+    <div class="form-group">
+        <label asp-for="NewTask.Title" class="control-label"><h2>Name Task</h2></label>
+        <input asp-for="NewTask.Title" class="form-control" />
+        <span asp-validation-for="NewTask.Title" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="NewTask.Description" class="control-label"><h2>Describe Task</h2></label>
+        <input asp-for="NewTask.Description" class="form-control" />
+        <span asp-validation-for="NewTask.Description" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Create" class="btn btn-primary" />
+    </div>
+</form>
 
 <h1>Task Manager</h1>
 <table class="table">
@@ -20,7 +44,7 @@
                         UNameSort = "None";
                     }
                 }
-                <a asp-page="./NewTasks" asp-route-PageNum="@Model.PageNum" asp-route-CurrentSort="@UNameSort">@Html.DisplayNameFor(model => model.Task[0].Worker.UserName)</a>
+                <a asp-page="./NewTasks" asp-route-PageNum="@Model.PageNum" asp-route-CurrentSort="@UNameSort">@Html.DisplayNameFor(model => model.Task[0].Worker.FullName)</a>
             </th>
             <th>
                  @{
@@ -43,7 +67,7 @@
 @foreach (var item in Model.Task) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.Worker.UserName)
+                @Html.DisplayFor(modelItem => item.Worker.FullName)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Title)
@@ -52,10 +76,8 @@
                 @Html.DisplayFor(modelItem => item.Description)
             </td>
             <td>
-                <form method="post">
-                    <input type="hidden" asp-for="TaskIdToDelete" value="@item.WorkerTaskID" />
-                    <input type="submit" asp-page-handler="DeleteTask" value="Delete Task" class="btn btn-danger btn-sm" />
-                </form>
+                <a asp-page="./EditTask" asp-route-id="@item.WorkerTaskID">Edit</a>
+                <a asp-page="./DeleteTask" asp-route-id="@item.WorkerTaskID">Delete</a>
             </td>
         </tr>
 }
@@ -78,3 +100,7 @@
         <li class="page-item @nextDisabled"><a class="page-link" asp-page="./NewTasks" asp-route-PageNum="@(Model.PageNum + 1)" asp-route-CurrentSort="@Model.CurrentSort">Next</a></li>
     </ul>
 </nav>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_validationScriptsPartial");}
+}

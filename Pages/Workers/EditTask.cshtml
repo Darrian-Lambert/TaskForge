@@ -1,0 +1,49 @@
+@page
+@model TaskForge.Pages.Workers.EditTaskModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit Task</h1>
+
+<h4>@Html.DisplayFor(model => model.Task.Worker.FullName)</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Task.WorkerTaskID" />
+             <div class="form-group">
+                <label asp-for="Task.Worker.WorkerID" class="control-label"><h2>Select Worker</h2></label>
+                <select asp-for="Task.Worker.WorkerID" class="form-control">
+                    <option value="">-- Select Worker --</option>
+                    @foreach (var Worker in Model.TheseWorkers) {
+                        <option value="@Worker.WorkerID">@Worker.FullName</option>
+                    }
+                </select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Task.Title" class="control-label"></label>
+                <input asp-for="Task.Title" class="form-control" />
+                <span asp-validation-for="Task.Title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Task.Description" class="control-label"></label>
+                <input asp-for="Task.Description" class="form-control" />
+                <span asp-validation-for="Task.Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./NewTasks">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

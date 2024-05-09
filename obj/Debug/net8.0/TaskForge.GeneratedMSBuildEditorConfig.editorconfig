@@ -54,12 +54,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV29ya2Vyc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Darri/OneDrive/Desktop/School/ABP/TaskForge/Pages/Workers/DeleteTask.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV29ya2Vyc1xEZWxldGVUYXNrLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Darri/OneDrive/Desktop/School/ABP/TaskForge/Pages/Workers/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV29ya2Vyc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Darri/OneDrive/Desktop/School/ABP/TaskForge/Pages/Workers/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV29ya2Vyc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Darri/OneDrive/Desktop/School/ABP/TaskForge/Pages/Workers/EditTask.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV29ya2Vyc1xFZGl0VGFzay5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Darri/OneDrive/Desktop/School/ABP/TaskForge/Pages/Workers/Index.cshtml]
@@ -72,6 +80,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Darri/OneDrive/Desktop/School/ABP/TaskForge/Pages/_LoginLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0xvZ2luTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Darri/OneDrive/Desktop/School/ABP/TaskForge/Pages/_MainLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX01haW5MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Darri/OneDrive/Desktop/School/ABP/TaskForge/Pages/_ViewImports.cshtml]
